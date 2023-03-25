@@ -1,9 +1,9 @@
-@import '/src/sass/variables';
-@import '/src/sass/normalize';
-@import '/src/sass/typography';
-@import '/src/sass/global';
-@import '/src/sass/layout';
+@import '_variables.scss';
+@import '_normalize';
+@import 'typography';
+@import 'global';
+@import 'layout';
 
-@import '/src/sass/pages/homepage';
-@import '/src/sass/pages/discover';
-@import '/src/sass/pages/search';
+@import 'pages/_homepage.scss';
+@import 'pages/discover';
+@import 'pages/search';
