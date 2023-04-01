@@ -12,7 +12,18 @@ body{
 }
 
 .container {
-  //max-width: 700px;
+  height: 2100px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 auto;
+}
+
+#pages {
+  > * {
+    display: none;
+  }
+
+  > .active {
+    display: block;
+  }
 }

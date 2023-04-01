@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -25,6 +26,7 @@
                 <a href="#discover">Discover</a>
             </div>
         </section>
+
         <div id="pages">
             <section id="home">
                 <div id="home-page" class="home-page container"></div>
@@ -41,30 +43,35 @@
             <p>All rights reserved</p>
         </div>
         <script id="template-home-page" type="text/x-handlebars-template">
-            <!--Place for homepage-->
+        <div class="home-main">    
             <div class="songs-wrapper">
-                <div class="song">
-                <!--songs from plugin-->
+                <div class="song player">
+                    <audio src='songs/{{filename}}' ></audio>
+                    
                 </div>
             </div>
+            
             <h1>Subscribe Now</h1>
+            
             <div class="subscribe-wrapper">
-                <img src="/images/subscribe.jpg" alt="Subscribe background">
-                <img src="/src/images/artist.jpg" alt="Artist inside smoke">
+                <img src="/images/subscribe.jpg" alt="Subscribe background" class="sub-back">
+                <img src="/images/artist.jpg" alt="Artist inside smoke" class="sub-art">
                 <button class="btn-one">Join now</button>
-                <h2>Dean</h2>
-                <h2>Hen<span class="red-letters">son</span></h2>
+                <h2 class="first">Dean</h2>
+                <h2 class="second">Hen<span class="red-letters">son</span></h2>
                 <h4>New Album</h4>
                 <h5>Availble only for subscribers</h5>
-            </div>  
+            </div> 
+        </div> 
         </script>
         <script id="template-discover-page" type="text/x-handlebars-template">
-            <!--Place for Discover page-->
+            
         </script>
         <script id="template-search-page" type="text/x-handlebars-template">
-            <!--Place for Search page-->
+            
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
         <script src="js/app.js" type="module"></script>
     </body>
 </html>

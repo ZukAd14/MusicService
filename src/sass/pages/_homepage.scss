@@ -1,0 +1,104 @@
+.songs-wrapper {
+  height: 1000px;
+  background-color: $color-dark;
+  display: flex;
+  justify-content: center;
+}
+
+.song {
+  height: 250px;
+  width: auto;
+  border: 1px solid red;
+}
+
+.home-main{
+  border: 1px solid red;
+
+  h1 {
+    font-size: 5.2vw;
+    letter-spacing: 20px;
+    font-weight: $font-semibold;
+    background-color: transparent;
+    color: $color-light;
+    left: 0;
+    position: absolute;
+    top: 229.5%;
+    left: 25%;
+        
+  }
+
+  h2{
+    position: absolute;
+  }
+
+  h4{
+    position: absolute;
+    color: $color-secondary;
+    letter-spacing: 4px;
+    font-weight: $font-bold;
+    top: 317%;
+    left: 73%;
+    font-size: 1.6vw;
+  }
+
+  h5{
+    position: absolute;
+    color: $color-light;
+    top: 327%;
+    left: 37%;
+    font-size: 1vw;
+  }
+}
+
+.sub-back{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.sub-art{
+  position: absolute;
+  width: 460px;
+  height: 580px;
+  left: 59%;
+  top: 259%;
+  filter: drop-shadow(0 0 71px rgba(0,0,0,0.39));
+}
+
+.btn-one {
+  position: absolute;
+  height: 135px;
+  width: 315px;
+  background-color: $color-main;
+  color: $color-light;
+  left: 20%;
+  top: 295%;
+  filter: drop-shadow(0 0 71px rgba(0,0,0,0.11));
+  border-radius: 10px;
+  font-size: 40px;
+  font-weight: $font-bold;
+  letter-spacing: 4px;
+}
+
+.first {
+  top: 270%;
+  left: 45%;
+  font-size: 5.2vw;
+  letter-spacing: 10px;
+  font-weight: $font-black;
+  filter: drop-shadow(0 0 71px rgba(0,0,0,0.11));
+}
+
+.second {
+  font-size: 5.2vw;
+  letter-spacing: 10px;
+  font-weight: $font-black;
+  filter: drop-shadow(0 0 71px rgba(0,0,0,0.11));
+  color: $color-light;
+  left: 48%;
+  top: 285%;
+
+  .red-letters {
+    color: $color-main;
+  }
+}
